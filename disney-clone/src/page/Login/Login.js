@@ -9,6 +9,11 @@ const Login = (props) => {
                     <SignUp>
                         GET ALL THERE
                     </SignUp>
+                    <Description>
+                        Hello this is Description Hello this is Description Hello this is Description Hello this is Description Hello this is Description Hello this is Description
+                        Hello this is Description Hello this is Description Hello this is Description Hello this is Description Hello this is Description Hello this is Description 
+                    </Description>
+                    <CTAlg2 src="/image/cta-logo-two.png" all=""/>
                 </CTA>
                 <BgImage/>
             </Content>
@@ -73,11 +78,36 @@ const CTAlg1 = styled.img`
     /* object-fit: cover; */
     /* margin-bottom: 20px; */
 `
+const CTAlg2 = styled.img`
+    /* height: 120%; */
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: 600px;
+    min-height: 1px;
+    display: block;
+    /* object-fit: cover; */
+    /* margin-bottom: 20px; */
+`
 const SignUp = styled.a`
-    background-color: blue;
-    /* width: 70%; */
+    background-color: #0063e5;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 5px;
+    padding: 20px 0px;
+    border: 1px solid transparent;
+    width: 100%;
+    border-radius: 4px;
+    &:hover{
+        background-color: blue;
+    }
     /* margin-top: 82px; */
 `
-
+const Description = styled.p`
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    /* margin: 0 0 24px; */
+    font-size: 11;
+    color: hsla(0,0%,95.3%,1);
+`
 
 export default Login;
